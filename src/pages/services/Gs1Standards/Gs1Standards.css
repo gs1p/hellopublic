@@ -1,0 +1,193 @@
+@font-face {
+    font-family: Hagrid;
+    src: url('../../../fonts/Hagrid-Regular-trial.ttf');
+  }
+  
+  @font-face {
+    font-family: Graphik;
+    src: url('../../../fonts/GraphikRegular.otf');
+  }
+  
+  @font-face {
+    font-family: GraphikLight;
+    src: url('../../../fonts/GraphikLight.otf');
+  }
+  .gs1-standards-unique-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin-top: 5px;
+  }
+  
+  .gs1-standards-unique-section {
+    flex: 1;
+    margin: 0 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gs1-standards-unique-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .gs1-standards-unique-icon-container {
+    background-color: #e8f4fd;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gs1-standards-unique-section:nth-child(1) .gs1-standards-unique-icon-container {
+    background-color: #e8f4fd;
+  }
+  
+  .gs1-standards-unique-section:nth-child(2) .gs1-standards-unique-icon-container {
+    background-color: #fde8f3;
+  }
+  
+  .gs1-standards-unique-section:nth-child(3) .gs1-standards-unique-icon-container {
+    background-color: #e8fde8;
+  }
+  
+  .gs1-standards-unique-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .gs1-standards-unique-heading {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .gs1-standards-unique-content {
+    width: 100%;
+  }
+  
+  .gs1-standards-unique-subheading {
+    background-color: #00a7e1;
+    color: white;
+    padding: 12px 15px;
+    margin-top: 0;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .gs1-standards-unique-section:nth-child(1) .gs1-standards-unique-subheading {
+    background-color: #00a7e1;
+  }
+  
+  .gs1-standards-unique-section:nth-child(2) .gs1-standards-unique-subheading {
+    background-color: #e91e63;
+  }
+  
+  .gs1-standards-unique-section:nth-child(3) .gs1-standards-unique-subheading {
+    background-color: #4caf50;
+  }
+  
+  .gs1-standards-unique-category {
+    color: #00a7e1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .gs1-standards-unique-list {
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #555;
+  }
+  
+  .gs1-standards-unique-list li {
+    font-family: GraphikLight;
+    color:#005288 ;
+    margin-bottom: 8px;
+  }
+  
+  .gs1-standards-unique-barcode-examples,
+  .gs1-standards-unique-rfid-examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .gs1-standards-unique-barcode-examples img,
+  .gs1-standards-unique-rfid-examples img {
+    max-width: 150px;;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .gs1-standards-unique-wrapper {
+      flex-direction: column;
+    }
+  
+    .gs1-standards-unique-section {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gs1-standards-unique-wrapper {
+      padding: 20px 10px;
+    }
+  
+    .gs1-standards-unique-section {
+      padding: 20px;
+    }
+  
+    .gs1-standards-unique-heading {
+      font-size: 24px;
+    }
+  
+    .gs1-standards-unique-subheading {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gs1-standards-unique-icon-container {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .gs1-standards-unique-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .gs1-standards-unique-heading {
+      font-size: 22px;
+    }
+  
+    .gs1-standards-unique-subheading {
+      font-size: 16px;
+    }
+  
+    .gs1-standards-unique-category {
+      font-size: 16px;
+    }
+  }

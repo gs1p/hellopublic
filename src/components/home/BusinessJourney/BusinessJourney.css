@@ -1,0 +1,115 @@
+.business-journey {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    
+  }
+  
+.business-journey h1 {
+    color: #005288;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  
+  .journey-stages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .stage {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  
+  .Business-icon123 {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    background-color: #ffdcbc;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .starting-out {
+    background-image: url('starting.gif');
+  }
+  
+  .growing {
+    background-image: url('growth.gif');
+  }
+  
+  .scaling-up {
+    background-image: url('scalingup.gif');
+  }
+  
+  .exporting {
+    background-image: url('export.gif');
+  }
+  .Update23-button{
+
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .business-journey p {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (min-width: 576px) {
+    .stage {
+      width: calc(50% - 30px);
+    }
+    
+    h1 {
+      font-size: 32px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .icon {
+      height: 280px;
+      width: 280px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .journey-stages {
+      justify-content: space-between;
+    }
+    
+    .stage {
+      width: 23%;
+    }
+    
+    .icon {
+      height: 300px;
+      width: 300px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+  }

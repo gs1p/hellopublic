@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../fonts/GraphikRegular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'GraphikLight';
+    src: url('../../fonts/GraphikLight.otf') format('opentype');
+  }
+  
+  .barcode-guide {
+    font-family: Arial, sans-serif;
+    margin: 50px auto 0;
+    padding: 20px;
+    max-width: 1200px;
+  }
+  
+  .barcode-info h2 {
+    color: #f85f36;
+  }
+  
+  .barcode-info h4 {
+    color: #005288;
+    font-family: Graphik;
+  }
+  
+  .barcode-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .barcode-tips li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+    font-family: GraphikLight;
+  }
+  
+  .barcode-tips li:before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #f85f36;
+    font-size: 18px;
+  }
+  
+  .content-guide {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .barcode-image {
+    flex-shrink: 0;
+    height: 40vh;
+    width: 40vh;
+    max-width: 100%;
+  }
+  
+  .barcode-placeholder {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #f85f36;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .barcode-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: GraphikLight;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1024px) {
+    .barcode-guide {
+      margin: 30px auto 0;
+      padding: 15px;
+    }
+  
+    .content-guide {
+      flex-direction: column;
+    }
+  
+    .barcode-image {
+      width: 100%;
+      height: auto;
+      max-height: 40vh;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .barcode-guide {
+      margin: 60px 0;
+      padding: 10px;
+    }
+  
+    .barcode-info h2 {
+        margin-top: 0px;
+      font-size: 24px;
+    }
+  
+    .barcode-info h4 {
+      font-size: 18px;
+    }
+  
+    .barcode-tips li {
+      padding-left: 25px;
+    }
+  
+    .barcode-tips li:before {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .barcode-guide {
+      margin: 60px 0;
+      padding: 5px;
+    }
+  
+    .barcode-info h2 {
+    /* margin-top: 40px; */
+      font-size: 20px;
+    }
+  
+    .barcode-info h4 {
+      font-size: 16px;
+    }
+  
+    .barcode-tips li {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+  
+    .barcode-tips li:before {
+      font-size: 14px;
+    }
+  
+    .barcode-info p {
+      font-size: 14px;
+    }
+  }

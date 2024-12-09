@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../../../fonts/GraphikRegular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'GraphikLight';
+    src: url('../../../../fonts/GraphikLight.otf') format('opentype');
+  }
+.why-choose-gs1 {
+    padding: 2rem;
+    background-color: #f8f8f8;
+  }
+  
+  .why-choose-gs1 h2 {
+    text-align: center;
+    color: #003087;
+    margin-bottom: 2rem;
+    font-family: Graphik;
+  }
+  
+  .reasons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .reason {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reason-icon {
+    font-size: 3rem;
+    color: #f85f36;
+    margin-bottom: 1rem;
+  }
+  
+  .reason h3 {
+    color: #003087;
+    margin-bottom: 1rem;
+    font-family: Graphik;
+  }
+  
+  .reason p {
+    font-size: 0.9rem;
+    color: #333;
+    font-family: GraphikLight;
+  }
+  
+  @media (max-width: 768px) {
+    .reasons-container {
+      flex-direction: column;
+    }
+  }

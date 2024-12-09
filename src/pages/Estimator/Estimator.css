@@ -1,0 +1,185 @@
+/* Base styles */
+.estimator-wrapper {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 20px; */
+  }
+  
+  .gtin-estimator {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  
+  .Agriculture3-banner {
+    background: url('../services/barcode\ image54541.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .banner2-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 50%;
+  }
+  
+  .banner2-content h1 {
+    font-size: 48px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Graphik, sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    color: #005288;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .disclaimer {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .estimator-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .left-panel, .right-panel {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #f85f36;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .header-row td {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .result {
+    background-color: #e1f5fe;
+    font-size: 24px;
+    color: #00a4e4;
+  }
+  
+  .multiply {
+    font-size: 24px;
+    color: #f85f36;
+    background-color: #fff3e0;
+  }
+  
+  .input-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .total-gtins {
+    background-color: #f85f36;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .total-gtins h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .total-value {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 768px) {
+    .left-panel, .right-panel {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .Agriculture3-banner {
+      height: 200px;
+      padding: 0 20px;
+    }
+  
+    .banner2-content h1 {
+      font-size: 32px;
+      margin-top: 40px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    td {
+      padding: 8px;
+    }
+  
+    .result, .multiply {
+      font-size: 18px;
+    }
+  
+    .total-gtins h3 {
+      font-size: 16px;
+    }
+  
+    .total-value {
+      font-size: 28px;
+    }
+  }

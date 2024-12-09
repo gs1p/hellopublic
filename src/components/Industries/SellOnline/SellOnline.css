@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../../fonts/GraphikRegular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'GraphikLight';
+    src: url('../../../fonts/GraphikLight.otf') format('opentype');
+  }
+  
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url('https://cdn.pixabay.com/photo/2024/04/05/05/16/e-commerce-8676517_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust this value as needed */
+    overflow: hidden;
+    padding: 0 50px;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* A/* Blue overlay with 60% opacity */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    padding: 2rem;
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero-content h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    font-family: Graphik;
+    text-align: left;
+  }
+  
+  /* Remove the .hero-image styles as we're no longer using a separate image element */
+  
+  .info-section {
+    display: flex;
+    padding: 2rem;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding-right: 2rem;
+   
+  }
+  .main-content p{
+    font-family: GraphikLight;
+   
+  }
+  
+  .sidebar {
+    flex: 1;
+  }
+  
+  .info-box {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .info-box h3 {
+    color: #003087;
+    font-family: Graphik;
+  }
+  
+  .info-box a {
+    color: #0066cc;
+    text-decoration: none;
+    font-family: GraphikLight;
+  }
+  .info-box  {
+    /* color: #0066cc; */
+    text-decoration: none;
+    font-family: GraphikLight;
+  }
+
+  .containerGTIN  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #f85f36;
+    background-image: linear-gradient(
+        135deg,
+        rgba(0, 46, 124, 0.1) 25%,
+        transparent 25%
+      ),
+      linear-gradient(
+        225deg,
+        rgba(0, 46, 124, 0.1) 25%,
+        transparent 25%
+      ),
+      linear-gradient(
+        315deg,
+        rgba(0, 46, 124, 0.1) 25%,
+        transparent 25%
+      ),
+      linear-gradient(
+        45deg,
+        rgba(0, 46, 124, 0.1) 25%,
+        transparent 25%
+      );
+    background-size: 100px 100px;
+    background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
+  }
+  
+  .contentGTIN {
+    text-align: center;
+  }
+  
+  .contentGTIN h2 {
+    color: white; /* Adjust the color to match the image */
+    font-family: Graphik;
+  }
+  
+ .contentGTIN p {
+    color: white; /* Adjust the color to match the image */
+    font-family: GraphikLight;
+  }
+  
+  .cta-button2244 {
+    border-radius: 5px;
+    background-color: #002e7c; /* Adjust the color to match the image */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: GraphikLight;
+    font-size: 16px;
+  }
+  
+  .cta-button22:hover {
+    background-color: #002e7c; /* Slightly lighter shade for hover effect */
+    /* color: #e74c3c; */
+  }
+  
+  
+  /* Add more specific styles as needed */
+  
+  @media (max-width: 768px) {
+    .hero-section, .info-section {
+      flex-direction: column;
+    }
+    .hero-content h1 {
+      color: white;
+      font-size: 2.5rem;
+      margin-top: 5rem;
+      width: 100%;
+      font-family: Graphik;
+    }
+    
+    .hero-content, .main-content, .sidebar {
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+  }

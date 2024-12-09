@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('../../fonts/GraphikRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GraphikLight';
+  src: url('../../fonts/GraphikLight.otf') format('opentype');
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Graphik', sans-serif;
+}
+.Header-Tools{
+  color: #005288;
+}
+.header {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation {
+  flex-grow: 1;
+  /* margin-left: 40px; */
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 0 15px;
+  padding: 30px 0;
+  position: relative;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #005288;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+  color: #003e66;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+  padding: 20px;
+  border-top: 3px solid #005288;
+  width: auto;
+  min-width: 600px;
+}
+
+.navigation ul li:hover .submenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submenu-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  justify-content: flex-start;
+}
+
+.submenu li {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.submenu li a {
+  color: #005288;
+  font-size: 14px;
+  font-family: 'GraphikLight', sans-serif;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  color: #003e66;
+  text-decoration: underline;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.Get-a-barcode, .member-login {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Get-a-barcode {
+  background-color: #f85f36;
+  color: white;
+}
+
+.Get-a-barcode:hover {
+  background-color: #f85f36;
+}
+
+.member-login {
+  background-color: white;
+  color: #005288;
+  border: 1px solid #005288;
+}
+
+.member-login:hover {
+  background-color: #005288;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navigation ul li {
+    margin: 0 10px;
+  }
+  
+  .navigation ul li a {
+    font-size: 14px;
+  }
+  
+  .header-buttons button {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 10px;
+    height: 60px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+  }
+
+  .navigation.open {
+    left: 0;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation ul li {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    border-top: none;
+    display: none;
+    padding-left: 20px;
+  }
+
+  .navigation ul li:hover .submenu {
+    display: none;
+  }
+
+  .submenu.active {
+    display: block;
+  }
+
+  
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    color: #005288;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  .navigation ul li {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative; /* Ensure submenu positioning */
+  }
+
+  .navigation ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 20px;
+    border-top: 3px solid #005288;
+    width: 100vw; /* Full width */
+    min-width: 200px; /* Adjust as needed */
+  }
+
+  .navigation ul li:hover .submenu {
+    display: block;
+  }
+
+  
+}

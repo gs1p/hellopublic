@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Hagrid;
+    src: url(../../../fonts/Hagrid-Regular-trial.ttf);
+  }
+  
+  @font-face {
+    font-family: Graphik;
+    src: url(../../../fonts/GraphikRegular.otf);
+  }
+  
+  @font-face {
+    font-family: GraphikLight;
+    src: url(../../../fonts/GraphikLight.otf);
+  }
+  
+  .members-component {
+    display: flex;
+    /* background-color: rgb(229, 239, 243); */
+    background-color: white;
+    padding: 60px 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 185px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .members-content {
+    flex: 1;
+    padding-right: 50px;
+    min-width: 300px;
+  }
+  
+  .members-content h4 {
+    color: #e74c3c;
+    font-size: 1.2em;
+    font-family: GraphikLight;
+  }
+  
+  .members-content h2 {
+    color: #062a5f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: Graphik;
+  }
+  
+  .members-content p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    font-family: GraphikLight;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .primary-btn, .secondary-btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-btn {
+    background-color: #e74c3c;
+    color: white;
+    font-family: GraphikLight;
+  }
+  
+  .primary-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    color: #003e66;
+    border: 2px solid #003e66;
+    font-family: GraphikLight;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #003e66;
+    color: white;
+  }
+  
+  .members-slider {
+    display: flex;
+    overflow-x: hidden;
+    padding: 10px 0;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .member-logo {
+    width: 50%;
+    height: 100px;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    background-color: none;
+    margin-bottom: 10px;
+  }
+  
+  .member-info {
+    padding: 15px;
+  }
+  
+  .member-info h3 {
+    margin: 0 0 5px;
+    font-size: 1.1em;
+    color: #062a5f;
+    font-family: Graphik;
+  }
+  
+  .member-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+    font-family: GraphikLight;
+  }
+  
+  @media (max-width: 1024px) {
+    .members-component {
+      flex-direction: column;
+      padding: 40px 5%;
+    }
+  
+    .members-content {
+      padding-right: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .buttons {
+      justify-content: center;
+    }
+  
+    .members-slider {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .members-content h2 {
+      font-size: 2em;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .primary-btn, .secondary-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .member-card {
+      width: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .members-content h2 {
+      font-size: 1.8em;
+    }
+  
+    .members-content p {
+      font-size: 1em;
+    }
+  
+    .primary-btn, .secondary-btn {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    .member-card {
+      width: 200px;
+    }
+  }
+  

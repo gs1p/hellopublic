@@ -1,0 +1,327 @@
+@font-face {
+    font-family: Hagrid;
+    src: url('../../../fonts/Hagrid-Regular-trial.ttf');
+  }
+  
+  @font-face {
+    font-family: Graphik;
+    src: url('../../../fonts/GraphikRegular.otf');
+  }
+  
+  @font-face {
+    font-family: GraphikLight;
+    src: url('../../../fonts/GraphikLight.otf');
+  }
+  .mainAgriculture{
+    display: flex;
+    flex-direction: row;
+  }
+  .Agriculture1-banner {
+    background: url('../TechnicalIndustries/tech-equipment.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .Agriculture1-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(27, 26, 26, 0.438); /* Adjust the color and opacity as needed */
+  }
+  
+  .banner1-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 50%;
+  }
+  
+  .banner1-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Graphik;
+    color: white;
+    text-align: left;
+    width: 1000px;
+  }
+  
+  .banner1-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Graphik;
+  }
+  
+  .agribusiness1-section {
+    display: flex;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
+  
+  .farm1-content {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .image1 {
+    flex: 1;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .farm1-content h1 {
+    color: #00427e;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: Graphik;
+    text-align: left;
+  }
+  h2 {
+    color: #00427e;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Graphik;
+  }
+  p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: GraphikLight;
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .barcode1-section {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 50px;
+  }
+  
+  .barcode1-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .barcode1-content h1 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .barcode1-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .discover-more {
+    background-color: #f85f36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .AgriGTIN1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #005288;
+    background-image: linear-gradient(
+        135deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        225deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        315deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        45deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      );
+    background-size: 100px 100px;
+    background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
+  }
+  
+  .contentGTIN1 {
+    text-align: center;
+  }
+  
+  .contentGTIN1 h2 {
+    color: white; /* Adjust the color to match the image */
+    font-family: Graphik;
+  }
+  
+ .contentGTIN1 p {
+    color: white; /* Adjust the color to match the image */
+    font-family: GraphikLight;
+  }
+  
+  .cta-button221 {
+    border-radius: 5px;
+    background-color: #f85f36; /* Adjust the color to match the image */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: GraphikLight;
+    font-size: 16px;
+  }
+  
+  .cta-button221:hover {
+    background-color: #f85f36; /* Slightly lighter shade for hover effect */
+    /* color: #e74c3c; */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .agribusiness1-section {
+      flex-direction: column;
+    }
+    
+    .farm1-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  /* ... (keep all the existing styles) ... */
+
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  .Agriculture1-banner {
+    height: 300px;
+    padding: 0 30px;
+  }
+
+  .banner1-content {
+    max-width: 70%;
+  }
+
+  .banner1-content h1 {
+    font-size: 36px;
+  }
+
+  .banner1-content p {
+    font-size: 16px;
+  }
+
+  .agribusiness1-section,
+  .barcode-section {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .mainAgriculture {
+    flex-direction: column;
+  }
+
+  .Agriculture1-banner {
+    height: 250px;
+    padding: 0 20px;
+  }
+
+  .banner1-content {
+    max-width: 100%;
+  }
+
+  .banner1-content h1 {
+    font-size: 28px;
+  }
+
+  .banner1-content p {
+    font-size: 14px;
+  }
+
+  .agribusiness1-section,
+  .barcode1-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .farm1-content,
+  .barcode1-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image1 {
+    text-align: center;
+  }
+
+  .AgriGTIN1 {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contentGTIN1 h2 {
+    font-size: 24px;
+  }
+
+  .contentGTIN1 p {
+    font-size: 14px;
+  }
+
+  .cta-button221 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile styles */
+  .Agriculture1-banner {
+    height: 200px;
+  }
+
+  .banner-content1 h1 {
+    font-size: 24px;
+  }
+
+  .banner-content1 p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
