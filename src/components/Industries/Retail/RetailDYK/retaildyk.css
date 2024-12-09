@@ -1,0 +1,70 @@
+.did-you-know-section {
+    flex: 1;
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 8vh;
+  }
+  
+  .did-you-know-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .did-you-know-section h3 {
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .did-you-know-section span {
+    margin-bottom: 15px;
+    color: #003366;
+    width: 60%;
+  }
+  
+  .discover-link {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .discover-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .retail-page {
+      flex-direction: column;
+    }
+    
+    .main-content {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    .did-you-know-section {
+     display: none;
+    }
+  
+    .did-you-know-section span {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .did-you-know-section {
+     
+      display: none;
+    }
+  
+    .did-you-know-section h3 {
+      font-size: 1.2em;
+    }
+  
+    .did-you-know-section span {
+      font-size: 0.9em;
+    }
+  }
+  

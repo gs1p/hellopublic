@@ -1,0 +1,471 @@
+/* servicesMain.css */
+
+.gs1-service-page {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.gs1-banner {
+  background-color: #155391;
+  color: white;
+  padding: 60px 8%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.image-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service-image{
+ height: 120vh;
+ width: 160vh;
+ margin: 20px;
+ align-self: center;
+}
+.gs1-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(30deg);
+}
+
+.gs1-banner-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  position: relative;
+  color: #fff;
+  text-align: left;
+}
+
+.gs1-banner-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 800px;
+  position: relative;
+  line-height: 1.8;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .gs1-banner {
+    padding: 50px 6%;
+  }
+  
+  .gs1-banner-title {
+    font-size: 2.5rem;
+  }
+  
+  .gs1-banner-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gs1-banner {
+    padding: 40px 5%;
+  }
+  
+  .gs1-banner-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gs1-banner-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gs1-banner {
+    padding: 30px 4%;
+  }
+  
+  .gs1-banner-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .gs1-banner-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Animation for modern browsers */
+@keyframes gs1-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gs1-banner-title, .gs1-banner-text {
+  animation: gs1-fade-in-up 0.6s ease-out forwards;
+}
+
+.gs1-banner-text:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.gs1-banner-text:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.gs1-service-section {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.gs1-service-illustration {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.gs1-service-image {
+  max-width: 100%;
+  height: auto;
+  padding-left: 0%;
+  margin-top: 50px;
+  
+ 
+ 
+}
+
+.gs1-service-content {
+  flex: 1;
+  
+}
+
+.gs1-service-heading {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.gs1-service-description {
+  margin-bottom: 20px;
+}
+
+.gs1-service-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.gs1-service-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgb(28, 26, 99);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.gs1-service-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: #003366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gs1-service-icon::before {
+  color: white;
+  font-size: 20px;
+}
+
+.gs1-icon-barcode::before { content: '\1F4E6'; }
+.gs1-icon-productflow::before { content: '\27A1'; }
+.gs1-icon-verification::before { content: '\2714'; }
+.gs1-icon-photography::before { content: '\1F4F7'; }
+.gs1-icon-barcode1::before { content: '\1F4E2'; }
+.gs1-icon-productflow1::before { content: '\1F4C8'; }
+.gs1-icon-verification1::before { content: '\9989'; }
+.gs1-icon-photography1::before { content: '\1F30D'; }
+.gs1-icon-barcode2::before { content: '\1F4E2'; }
+.gs1-icon-productflow2::before { content: '\1F455'; }
+.gs1-icon-verification2::before { content: '\1F3C5'; }
+.gs1-icon-photography2::before { content: '\1F4F7'; }
+.gs1-icon-barcode3::before { content: '\1F44D'; }
+.gs1-icon-productflow3::before { content: '\1F4B1'; }
+.gs1-icon-verification3::before { content: '\1F441'; }
+.gs1-icon-photography3::before { content: '\1F4F7'; }
+
+.gs1-service-details {
+  flex: 1;
+}
+
+.gs1-service-title {
+  margin: 0;
+  color: #003366;
+}
+
+.gs1-service-description {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .gs1-service-section {
+    flex-direction: column;
+  }
+
+  .gs1-service-illustration {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .gs1-service-heading {
+    font-size: 1.5rem;
+  }
+
+  .gs1-service-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gs1-service-icon {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainAgriculture{
+  display: flex;
+  flex-direction: row;
+}
+.Agriculture2-banner {
+  background: url('../services/update\ image.png'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust based on your needs */
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+.Agriculture3-banner {
+  background: url('../services/barcode\ image54541.png'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust based on your needs */
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+
+.banner2-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  max-width: 50%;
+  
+}
+
+.banner2-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Graphik;
+  color: white;
+}
+.agribusiness2-section {
+  display: flex;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+.farm2-content {
+  flex: 2;
+  padding-right: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+
+.image2 {
+  flex: 1;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.h1 {
+  color: #00427e;
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-family: Graphik;
+}
+h2 {
+  color: #00427e;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: Graphik;
+}
+p9 {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: GraphikLight;
+  color: #01125e;
+  font-size: 20px;
+
+}
+
+p1 {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: GraphikLight;
+  color: #003366;
+  font-size: 17px;
+
+}
+
+
+@media (max-width: 768px) {
+  .agribusiness2-section {
+    flex-direction: column;
+  }
+  
+  .farm2-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+/* Tablet styles */
+.Agriculture2-banner, .Agriculture3-banner{
+  height: 300px;
+  padding: 0 30px;
+}
+
+.banner2-content {
+  max-width: 70%;
+}
+
+.banner2-content h1 {
+  font-size: 36px;
+}
+
+.banner2-content p {
+  font-size: 16px;
+}
+
+.agribusines2-section,
+.barcode-section {
+  padding: 20px 30px;
+}
+}
+
+@media (max-width: 768px) {
+/* Mobile styles */
+.mainAgriculture {
+  flex-direction: column;
+}
+
+.Agriculture2-banner, .Agriculture3-banner {
+  height: 250px;
+  padding: 0 20px;
+}
+
+.banner2-content {
+  max-width: 100%;
+}
+
+.banner2-content h1 {
+  font-size: 28px;
+}
+
+.banner2-content p {
+  font-size: 14px;
+}
+
+.agribusiness-section{
+  flex-direction: column;
+  padding: 20px;
+}
+
+.farm1-content {
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.image1 {
+  text-align: center;
+}
+
+}
+
+@media (max-width: 480px) {
+/* Small mobile styles */
+.Agriculture2-banner , .Agriculture3-banner{
+  height: 200px;
+}
+
+.banner-content2 h1 {
+  font-size: 24px;
+}
+
+.banner-content2 p {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+}

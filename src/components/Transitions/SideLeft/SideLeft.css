@@ -1,0 +1,10 @@
+.slide-in-left-section {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .slide-in-left-section.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }

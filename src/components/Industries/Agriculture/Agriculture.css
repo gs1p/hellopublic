@@ -1,0 +1,335 @@
+@font-face {
+    font-family: Hagrid;
+    src: url('../../../fonts/Hagrid-Regular-trial.ttf');
+  }
+  
+  @font-face {
+    font-family: Graphik;
+    src: url('../../../fonts/GraphikRegular.otf');
+  }
+  
+  @font-face {
+    font-family: GraphikLight;
+    src: url('../../../fonts/GraphikLight.otf');
+  }
+  .mainAgriculture{
+    display: flex;
+    flex-direction: row;
+  }
+  .Agriculture-banner {
+    background-image: url('../../../assets/farm.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .Agriculture-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 50%;
+  }
+  
+  .banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Graphik;
+    color: white;
+    text-align: left;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Graphik;
+  }
+  
+  .agribusiness-section {
+    display: flex;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
+  
+  .farm-content {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    border-radius: 20px;
+  }
+  
+  .farm-content h1 {
+    color: #00427e;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: Graphik;
+    text-align: left;
+   
+  }
+  
+  .farm-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: GraphikLight;
+
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .barcode-section {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 50px;
+  }
+  
+  .barcode-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .barcode-content h1 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 30px;
+    width: 700px;
+  }
+  
+  .barcode-content p {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-left: 30px;
+    width: 900px;
+  }
+  
+  .discover-more {
+    background-color: #f85f36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .AgriGTIN  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #005288;
+    background-image: linear-gradient(
+        135deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        225deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        315deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      ),
+      linear-gradient(
+        45deg,
+        rgba(0, 46, 124, 0.1) 15%,
+        transparent 55%
+      );
+    background-size: 100px 100px;
+    background-position: 0 0, 0 50px, 50px -50px, -50px 0px;
+  }
+  
+  .contentGTIN {
+    text-align: center;
+  }
+  
+  .contentGTIN h2 {
+    color: white; /* Adjust the color to match the image */
+    font-family: Graphik;
+  }
+  
+ .contentGTIN p {
+    color: white; /* Adjust the color to match the image */
+    font-family: GraphikLight;
+  }
+  
+  .cta-button22 {
+    border-radius: 5px;
+    background-color: #f85f36; /* Adjust the color to match the image */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: GraphikLight;
+    font-size: 16px;
+  }
+  
+  .cta-button22:hover {
+    background-color: #f85f36; /* Slightly lighter shade for hover effect */
+    /* color: #e74c3c; */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .agribusiness-section {
+      flex-direction: column;
+    }
+    
+    .farm-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  /* ... (keep all the existing styles) ... */
+
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  .Agriculture-banner {
+    height: 300px;
+    padding: 0 30px;
+  }
+
+  .banner-content {
+    max-width: 70%;
+  }
+
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .banner-content p {
+    font-size: 16px;
+  }
+
+  .agribusiness-section,
+  .barcode-section {
+    padding: 20px 30px;
+  }
+}
+/* Add this at the end of your Agriculture.css file */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .mainAgriculture {
+    flex-direction: column;
+  }
+
+  .Agriculture-banner {
+    height: 250px;
+    padding: 0 20px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+  }
+
+  .agribusiness-section,
+  .barcode-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .farm-content,
+  .barcode-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .AgriGTIN {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .contentGTIN h2 {
+    font-size: 24px;
+  }
+
+  .contentGTIN p {
+    font-size: 14px;
+  }
+
+  .cta-button22 {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile styles */
+  .Agriculture-banner {
+    height: 200px;
+  }
+
+  .banner-content h1 {
+    font-size: 24px;
+  }
+
+  .banner-content p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

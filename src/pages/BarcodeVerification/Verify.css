@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url('../../fonts/GraphikRegular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'GraphikLight';
+    src: url('../../fonts/GraphikLight.otf') format('opentype');
+  }
+  
+  .barcode-verification {
+    text-align: center;
+    color: #333;
+  }
+  
+  .main-content-verify {
+    /* margin-top: 80px; Adjust the top margin to ensure the content is not hidden behind the header */
+  }
+  
+  .main-content h2 {
+    margin-top: 0;
+  }
+  
+  .barcode-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column; /* Default to column layout for smaller screens */
+  }
+  
+  .barcode-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .barcode-text {
+    text-align: left;
+  }
+  
+  .barcode-text h3 {
+    color: #f85f36;
+    margin-bottom: 10px;
+    font-family: Graphik;
+  }
+  
+  .barcode-quality {
+    padding: 20px;
+  }
+  
+  .barcode-quality h2 {
+    text-align: left;
+    color: #003366;
+    margin-bottom: 20px;
+    font-family: Graphik;
+  }
+  
+  .content-barcode-ver {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-barcode-ver h3 {
+    margin-bottom: 10px;
+    font-family: Graphik;
+  }
+  
+  .content-barcode-ver ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .content-barcode-ver ul li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: GraphikLight;
+  }
+  
+  .content-barcode-ver p {
+    margin-top: 0;
+    font-family: GraphikLight;
+    text-align: left;
+  }
+  
+  strong {
+    font-weight: bold;
+    color: #003366;
+    font-family: GraphikLight;
+  }
+  
+  /* Responsive styles */
+  @media (min-width: 600px) {
+    .barcode-section {
+      flex-direction: row; /* Change to row layout for larger screens */
+    }
+  
+    .barcode-image {
+      width: 200px; /* Increase image size for larger screens */
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .main-content-verify {
+      /* padding: 40px; Add padding for larger screens */
+    }
+  
+    .barcode-quality {
+      padding: 40px; /* Add padding for larger screens */
+    }
+  
+    .content-barcode-ver {
+      padding: 40px; /* Add padding for larger screens */
+    }
+  
+    .barcode-image {
+      width: 250px; /* Increase image size further for larger screens */
+    }
+  }
+  

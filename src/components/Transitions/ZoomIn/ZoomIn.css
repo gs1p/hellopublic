@@ -1,0 +1,11 @@
+.zoom-in-section {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 1.3s ease-out;
+  }
+  
+  .zoom-in-section.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    
+}

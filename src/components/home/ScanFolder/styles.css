@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Hagrid;
+  src: url(../../../fonts/Hagrid-Regular-trial.ttf);
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(../../../fonts/GraphikRegular.otf);
+}
+
+@font-face {
+  font-family: GraphikLight;
+  src: url(../../../fonts/GraphikLight.otf);
+}
+
+.Bar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: 'Graphik', sans-serif;
+  margin-bottom: 20px;
+}
+
+.bar-info-box {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 0 20px;
+  /* padding-left: 50px; */
+}
+
+.gs1-info-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.description9 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description9 h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #003366;
+  font-style: italic;
+  font-family: Graphik;
+}
+
+.description9 p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: GraphikLight;
+}
+
+.cta-button9 {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #f85f36;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: GraphikLight;
+}
+
+.cta-button9 a {
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button9:hover {
+  background-color: #f85f36;
+}
+
+@media (min-width: 768px) {
+  .Bar-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gs1-info-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* border-radius: 20px; */
+  }
+
+  .bar-info-box {
+    width: 45%;
+    margin: 0;
+    padding-left: 0px;
+    /* margin-right: 5%; */
+  }
+
+  .description9 {
+    width: 50%;
+    text-align: left;
+  }
+
+  .description9 h2 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .description9 p {
+    font-size: 20px;
+  }
+}

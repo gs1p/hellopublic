@@ -1,0 +1,248 @@
+.UpdateTenSteps-button {
+    background-color: #f85f36;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+    animation-delay: 1s;
+    animation: fadeInUp 1s ease-out forwards;
+    transition: opacity 1s ease;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    
+  }
+  .UpdateTenSteps-button  a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .step-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .step-content {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .step-container {
+      flex-direction: column;
+    }
+  
+    .step-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+
+
+
+  
+  .mainAgriculture{
+    display: flex;
+    flex-direction: row;
+  }
+  .Agriculture2-banner {
+    background: url('../services/update\ image.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  .Agriculture3-banner {
+    background: url('../services/barcode\ image54541.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .banner2-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 50%;
+    
+  }
+  
+  .banner2-content h1 {
+    font-size: 48px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Graphik;
+    color: white;
+    text-align: left;
+   
+  }
+  .agribusiness2-section {
+    display: flex;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
+  
+  .farm2-content {
+    flex: 2;
+    padding-right: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+  }
+  
+  .image2 {
+    flex: 1;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .h1 {
+    color: #00427e;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: Graphik;
+  }
+  .h2 {
+    color: #00427e;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: Graphik;
+  }
+  .p9 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: GraphikLight;
+    color: #020305;
+    font-size: 20px;
+  
+  }
+  
+  .p1 {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-family: GraphikLight;
+    color: #003366;
+    font-size: 17px;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .agribusiness2-section {
+      flex-direction: column;
+    }
+    
+    .farm2-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+  /* Tablet styles */
+  .Agriculture2-banner, .Agriculture3-banner{
+    height: 300px;
+    padding: 0 30px;
+  }
+  
+  .banner2-content {
+    max-width: 70%;
+  }
+  
+  .banner2-content h1 {
+    font-size: 36px;
+  }
+  
+  .banner2-content p {
+    font-size: 16px;
+  }
+  
+  .agribusines2-section,
+  .barcode-section {
+    padding: 20px 30px;
+  }
+  }
+  
+  @media (max-width: 768px) {
+  /* Mobile styles */
+  .mainAgriculture {
+    flex-direction: column;
+  }
+  
+  .Agriculture2-banner, .Agriculture3-banner {
+    height: 250px;
+    padding: 0 20px;
+  }
+  
+  .banner2-content {
+    max-width: 100%;
+  }
+  
+  .banner2-content h1 {
+    font-size: 28px;
+  }
+  
+  .banner2-content p {
+    font-size: 14px;
+  }
+  
+  .agribusiness-section{
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .farm1-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .image1 {
+    text-align: center;
+  }
+  
+  }
+  
+  @media (max-width: 480px) {
+  /* Small mobile styles */
+  .Agriculture2-banner , .Agriculture3-banner{
+    height: 200px;
+  }
+  
+  .banner-content2 h1 {
+    font-size: 24px;
+  }
+  
+  .banner-content2 p {
+    font-size: 12px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  }

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Hagrid;
+    src: url('../../../fonts/Hagrid-Regular-trial.ttf');
+  }
+  
+  @font-face {
+    font-family: Graphik;
+    src: url('../../../fonts/GraphikRegular.otf');
+  }
+  
+  @font-face {
+    font-family: GraphikLight;
+    src: url('../../../fonts/GraphikLight.otf');
+  }
+  .mainRetail{
+    display: flex;
+    flex-direction: row;
+  }
+  .HealthCare-banner {
+    background-image: url('../../../assets/health.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust based on your needs */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+  }
+  
+  .HealthCare-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 50%;
+  }
+  
+  .banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: Graphik;
+    color: white;
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Graphik;
+  }
+  
