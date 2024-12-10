@@ -32,6 +32,12 @@ import Estimator from './pages/Estimator/Estimator';
 import VerifiedByGS1 from './pages/VBG/VerifiedByGs1';
 import Training from './pages/Trainings/Train';
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> d6d9531ffd7c6b6ce5919676444cefe0d1c6ede6
 const App = () => {
 
 
