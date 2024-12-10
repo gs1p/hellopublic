@@ -101,7 +101,7 @@ const Header = () => {
           <button className="Get-a-barcode">Get a barcode</button>
         </Link>
         <Link to={`/Contact`}>
-          <button className="member-login">Contact Us</button>
+          <button className="member-login">Contact Us.</button>
         </Link>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
